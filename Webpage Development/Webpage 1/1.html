@@ -1,0 +1,218 @@
+<html>
+
+<head>
+	<style type="text/css">
+		#div1
+		{
+			color: red;
+			text-shadow:5px 5px 5px yellow;
+			font-family: Arial;
+			font-size: 30px;
+			font-weight: bold;
+			padding: 100px 50px;
+			font-style: italic;
+			float: left;
+			text-decoration: none;
+
+		}
+
+		#div2
+		{
+			float: right;
+			float: top;
+		}
+
+		#div4
+		{
+			float: left;
+			clear: both;
+		}
+
+		#div3
+		{
+			float: right;
+		}
+
+		#div5
+		{
+			float: left;
+			font-weight: bold;
+		
+		}
+		
+
+		body
+		{
+			background-image: url("adv1.jpg");
+		}
+
+		fieldset
+		{
+			width: 250px;
+			text-align: center;
+			border-radius: 40px;
+			box-shadow: 5px 5px 5px black;
+
+			
+		}
+
+		table
+		{
+			color: blue;
+			font-weight: bold;
+			
+			width: 200px;
+			height: 250px;
+			
+		}
+
+		#submit
+		{
+			background-color: green;
+			box-shadow: 2px 2px 5px black;
+			
+		}
+
+		#reset
+		{
+			background-color: green;
+			box-shadow: 2px 2px 2px black;
+			
+		}
+
+		.image1
+		{
+			width: 25px;
+			height: 25px;
+		}
+		
+		#img1
+		{
+			-webkit-transform: rotate(-30deg);
+			-moz-transform: rotate(-30deg);
+			-ms-transform: rotate(-30deg);
+			-o-transform: rotate(-30deg);
+			border-radius:  0px 30px;
+			
+		}
+
+		#img2
+		{
+			-webkit-transform: rotate(30deg);
+			-moz-transform: rotate(30deg);
+			-ms-transform: rotate(30deg);
+			-o-transform: rotate(30deg);
+			border-radius: 30px 0px;
+		}
+
+
+		
+
+		
+		
+	</style>
+
+
+	<script type="text/javascript">
+		var count = -1;
+		var im1 = new Array('1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg');
+
+		var im2 = new Array('2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','1.jpg');
+
+		
+
+		function changeBackGroundPic()
+		{
+		var c=count1();
+		document.getElementById('img1').src=im1[c];
+		document.getElementById('img2').src=im2[c];
+		/*document.body.style.backgroundSize = "100% 100%";*/
+		}
+
+		function count1()
+		{
+			if(count == im1.length-1)
+			{
+				count = -1;
+			}
+			count++;
+			return count;
+		}
+		setInterval('changeBackGroundPic()',2000);
+	</script>
+</head>
+
+<body onload='changeBackGroundPic()'>
+	<div id="container">
+
+		<div id="div1">
+			Let's Rock with Adventure Club <br /><br />
+
+			<a href="http://www.facebook.com"><img class="image1" src="facebook.jpg" /></a>&nbsp;&nbsp
+			<a href="http://www.google.com"><img class="image1" src="google.jpg" /></a> &nbsp;&nbsp;
+			<a href="http://www.yahoo.com"><img class="image1" src="yahoo.jpg" /></a> &nbsp;&nbsp;
+
+
+		</div>
+
+		<div id="div2">
+		<fieldset style="background-color: gray">
+		<legend style="color: red"><b>Register Free</b></legend>
+			<form id="form1" align="right">
+				<table id="table1">
+					<tr>
+					<td>First Name:  </td>
+					<td><input type="text" name="fname" id="fname" placeholder="eg. Aamir, Nasir, Farhin"></td>
+					</tr> 
+
+					<tr>
+					<td>Last Name:  </td>
+					<td><input type="text" name="lname" id="lname" placeholder="eg. Mustafa, Joshi, Kapoor"></td>
+					</tr>
+
+					<tr>
+					<td>E-mail:  </td>
+					<td><input type="email" name="ename" id="ename" placeholder="eg. abc@gmail.com"></td>
+					</tr>
+
+					<tr>
+					<td>Age:  </td>
+					<td><input type="number" max="100" min="1"  placeholder="Age" /></td>
+					</tr>
+
+					<tr>
+					<td class="td1"><input type="submit" name="submit" value="Submit" id="submit"></td>
+					<td class="td2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="reset" value="Reset" id="reset"></td>
+					</tr>
+				</table>
+			</form>
+			</fieldset>
+		</div>
+
+		<div id="div4">
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img id="img1" src="Sunset.jpg" height="200" width="200">&nbsp;&nbsp;&nbsp;
+
+			<img id="img2" src="Winter.jpg" height="200" width="200">
+			
+		</div>
+
+		<div id="div3">
+			<video align="right" width="300" height="250" autoplay="autoplay" loop="loop" controls="controls">
+				<source src="video1.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		<div id="div4">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="2.html"><b>Contact Us</b> </a> | 
+			<a href="3.html"><b>Upcoming Tours</b> </a>
+		</div>
+
+		
+
+	</div>
+	
+</body>
+</html>

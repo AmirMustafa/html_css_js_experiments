@@ -1,0 +1,214 @@
+<html>
+
+	<head>
+
+		<style type="text/css">
+
+			html
+		{
+			background: url('adv15.jpg') no-repeat center center fixed;
+			-webkit-background-size:cover;
+			
+		}
+		#sec1
+		{
+			float: left;
+		}
+		
+		#sec2
+		{
+			float: right;
+			padding: 10px 10px;
+		}
+
+		#sec3
+		{
+			float: left;
+			clear: both;
+			width:500px;
+
+		position: relative;
+		}
+
+		#sec4
+		{
+			float: right;
+			clear: both;
+		}
+
+		#sec5
+		{
+			padding-top: 80px;
+			padding-left: 50px;
+		}
+
+		#img1
+		{
+			width: 300px;
+			height: 200px;
+			padding-left: 50px;
+			margin-right: 30px; 
+		}
+
+		#table1
+		{
+			color: red;
+			font-weight: bold;
+			font-size: 20px;
+			
+		}
+
+		#form1
+		{
+			width: 200px;
+			margin-right: 10px;
+		}
+
+		#submit
+		{
+			background-color: green;
+			box-shadow: 2px 2px 5px black;
+			
+		}
+
+		#reset
+		{
+			background-color: green;
+			box-shadow: 2px 2px 2px black;
+			
+		}
+			
+			#heading1
+			{
+				color: red;
+				font-style: italic;
+				font-size: 40px;
+				text-shadow: 5px 5px 5px black;
+				padding-top: 35px;
+				padding-left: 50px;
+				font-family: forte;
+				text-align: left;
+			}
+
+			#p1
+			{
+				color: yellow;
+				font-style: italic;
+				text-shadow: 5px 5px 3px black;
+				padding-left: 50px;
+				font-size: 20px;
+				font-weight: bold;
+				font-family: Gabriola;
+
+			}
+
+			#p2
+			{
+				text-align: left;
+				font-weight: bold;
+				padding-left: 100px;	
+			}
+
+			fieldset
+		{
+			width: 250px;
+			text-align: center;
+			border-radius: 5px;
+			box-shadow: 5px 5px 5px black;
+		}
+
+		legend
+		{
+			font-size: 25px;
+			font-weight: bold;
+		}
+
+		#leftarrow, #rightarrow
+		{
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			
+			top: 50%;
+		}
+
+		video
+		{
+			bottom: 100px;
+		}
+			
+		</style>
+	</head>
+
+
+	<body>
+
+		<div class="container">
+			<div id="sec1">
+				<h2 id="heading1">Welcome to Ranger Club!</h2> <br />
+				<p id="p1"> It has always been pleasure assisting you! <br /> 
+				Register quickly and we will let you know the adventure spots. <br /> <br /></p>
+				
+				<p id="p2">
+				<a href="About us.html">About us!</a> //
+				<a href="Contact us.html">Contact us!</a> //
+				<a href="Articles.html">Articles!</a> //
+				<a href="Copyright.html">Copyright!</a> //
+				<a href="Events.html">Events!</a>
+				</p>
+			</div>
+
+			<div id="sec2">
+		<fieldset style="background-color: #dbe005">
+		<legend style="color: green"><b><i>Register Free</i></b></legend>
+			<form id="form1" align="right">
+				<table id="table1">
+					<tr>
+					<td>First Name:  </td>
+					<td><input type="text" name="fname" id="fname" placeholder="eg. Aamir, Nasir, Farhin"></td>
+					</tr> 
+
+					<tr>
+					<td>Last Name:  </td>
+					<td><input type="text" name="lname" id="lname" placeholder="eg. Mustafa, Joshi, Kapoor"></td>
+					</tr>
+
+					<tr>
+					<td>E-mail:  </td>
+					<td><input type="email" name="ename" id="ename" placeholder="eg. abc@gmail.com"></td>
+					</tr>
+
+					<tr>
+					<td>Age:  </td>
+					<td><input type="number" max="100" min="1"  placeholder="Age" /></td>
+					</tr>
+
+					<tr>
+					<td class="td1"><input type="submit" name="submit" value="Submit" id="submit"></td>
+					<td class="td2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" name="reset" value="Reset" id="reset"></td>
+					</tr>
+				</table>
+			</form>
+			</fieldset>
+		</div>
+
+		<div id="sec3">
+			<fieldset>
+				<img id='leftarrow' src='bb.png'>
+			</fieldset>
+				<img id="img1" src="adventure.jpg">
+				<img id='rightarrow' src='ff.png'>
+			
+		</div>
+
+		<div id="sec4">
+			<video align="right" width="300" height="250" autoplay="autoplay" loop="loop" controls="controls">
+				<source src="Achko Machko Yo Yo Honey Singh.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+		
+
+		</div>
+	</body>
+</html>

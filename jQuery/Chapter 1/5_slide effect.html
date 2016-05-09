@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script src="jquery.js">
+	</script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#slide').click(function()
+			{
+				$('#panel').slideToggle("slow");
+			})
+		})
+	</script>
+
+  <style type="text/css">
+	#panel
+	{
+		background: yellow;
+		height: 170px;
+		display: none;
+		color: green;
+		font-size: 20px;
+	}
+
+	#slide
+	{
+		height: 40px;
+		width: 200px;
+		text-align: center;
+		background: darkorange;
+		border-radius: 0px 0px 10px 10px;
+		padding-top: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		margin-left: 380px;
+		color: blue;
+	}
+  </style>
+ </head>
+
+ <body>
+  <fieldset id="panel">
+		<legend style="color:red; font-weight:bold; font-size: 20px;">jQuery</legend>
+
+		<ul>
+			<li> Jquery is a JavaScript Library.</li><br />
+			<li> Jquery simplifies Javascript programming.</li><br />
+			<li> Jquery is easy to learn.</li><br />
+		</ul>
+  </fieldset>
+  <p id="slide">Slide Panel</p>
+ </body>
+</html>

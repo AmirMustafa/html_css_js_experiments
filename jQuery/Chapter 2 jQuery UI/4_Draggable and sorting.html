@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  
+ <style>
+
+	#sortable
+	{
+		width: 200px;
+	}
+
+	li
+	{
+		background: GhostWhite;
+		padding: 5px;
+		border: 2px solid grey;
+	}
+
+ </style>
+
+ <script src="jquery-1.9.1.js"></script>
+ <script src="jquery-ui.js"></script>
+ 
+ <script>
+	$(document).ready(function()
+	{
+		$('#sortable').sortable();
+			$('li').dblclick(function()
+		{
+			$(this).remove();
+		})
+	});
+ </script>
+
+ </head>
+
+ <body>
+	<h4 style="color:red; margin-left:15px; margin-top:20px">Favourite Colors: </h4>
+	<ol id="sortable">
+		<li style="color:red">Red</li>
+		<li style="color:green">Green</li>
+		<li style="color:blue">Blue</li>
+		<li style="color:black">Black</li>
+		<li style="color:yellow">Yellow</li>
+		<li style="color:indigo">Indigo</li>
+		<li style="color:aqua">Aqua</li>
+	</ol>
+ </body>
+</html>

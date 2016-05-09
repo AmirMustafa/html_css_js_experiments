@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <script src="jquery.js"></script>
+  <script>
+		$(document).ready(function()
+		{
+			$('.accordion').find("p").eq(0).show();
+			$("h3").click(function()
+			{
+$(this).next("p").slideDown("slow").siblings("p:visible").slideUp("slow")				
+			})
+
+		});
+  </script>
+  
+
+  <style type="text/css">
+		body
+		{
+			margin: 10px auto;
+			width: 500px;
+			font-family: calibri;
+		}
+
+		.accordion
+		{
+			width: 400px;
+			border-bottom: 1px solid black;
+		}
+
+		.accordion h3
+		{
+			background: #c4c4c4;
+			padding: 5px 10px;
+			margin: 0;
+			border: 1px solid black;
+			border-bottom: none;
+			cursor: pointer;
+			color: blue;
+
+		}
+
+		.accordion h3:hover
+		{
+			background: darkgrey;
+		}
+
+		.accordion p
+		{
+			background: white;
+			margin: 0px;
+			padding: 10px 15px 20px;
+			border-left: 1px solid black;
+			display: none;
+			border-right: 1px solid black;
+		}
+
+		.accordion b
+		{
+			font-family: monotype corsiva;
+			font-weight: none;
+			font-size: 20px;
+			color: green;
+		}
+
+		.accordion i
+		{
+			
+			font-weight: none;
+			font-size: 18px;
+			color: red;
+		}
+
+  </style>
+ </head>
+
+ <body>
+	<div class="accordion">
+		<h3>Personal Details</h3>
+		<p>
+			<b>Name</b> :: <i>Aamir Mustafa</i><br />
+			<b>Date Of Birth</b> :: <i>01 Nov 1992</i><br />
+
+		</p>
+
+		<h3>Educational Details</h3>
+		<p>
+			<b>10<sup>th</sup>Class</b> :: <i>St. Patrick's School, West Bengal</i> <br />
+
+			<b>12<sup>th</sup>Class</b> :: <i>St. Patrick's School, West Bengal</i> <br />
+
+			<b>B-Tech<sup></b> :: <i>Nalanda Institute, Bhubaneswar</i> <br />
+
+		</p>
+
+		<h3>Professional Details</h3>
+		<p>
+			<b>Faculty[C, C++ Prog.]</b> :: <i>Sunbeam Institute, Karad</i><br />
+			<b>Sr. SME[Web Development]</b> :: <i>SEED Infotech</i><br />
+
+		</p>
+
+		<h3>Contact Details</h3>
+		<p>
+			<b>E-mail</b> :: amirmustafa777@gmail.com</i><br />
+			<b>Mobile</b> :: <i>9960866482</i><br />
+			<b>Facebook</b> :: <i>amirmustafa2012@gmail.com</i><br />
+
+		</p>
+
+
+	</div>
+ </body>
+</html>

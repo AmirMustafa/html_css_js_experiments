@@ -1,0 +1,41 @@
+<script>
+
+	var count = 0;
+	var i = new Array('adv1.jpg','adventure.jpg','adv3.jpg','mukund.jpg');
+	document.getElementById('')
+
+
+function next()
+{
+	var c = countingP();
+	document.getElementById('c').style.backgroundImage = "url(+i[c]+)";
+
+}
+
+function countingP()
+{
+	if (count == i.length-1)
+	{
+		count = -1;
+	}
+		count += 1;
+		return count;
+}
+
+function pre()
+{
+	var c = countingM();
+	document.getElementById('c').style.backgroundImage = "url(+i[c]+)";
+}
+
+function countingM()
+{
+	if (count == 0)
+	{
+		count = i.length;
+	}
+	count -= 1;
+	return count;
+
+}
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script>
+		function setStyle1()
+		{
+		document.getElementById("fname").style.background="yellow";
+		}
+
+		function setStyle2()
+		{
+		document.getElementById("fname").style.background="red";
+		}
+	</script>
+   
+ </head>
+
+ <body>
+  First Name:  <input type="text" onfocus="setStyle1()" onblur="setStyle2()" id="fname"><br />
+  
+ </body>
+</html>

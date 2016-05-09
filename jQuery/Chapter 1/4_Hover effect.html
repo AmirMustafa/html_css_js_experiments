@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <style type="text/css">
+	ul
+	{
+		display: none;
+		background: aqua;
+		color: red;
+		width: 250px;
+	}
+
+	b
+	{
+		background: black;
+		color: yellow;
+		font-weight: bold;
+		border: 1px solid purple;
+	}
+ </style>
+ 
+ <script src='jquery.js'></script>
+ <script>
+	$(document).ready(function()
+	{
+		$('#sec1').mouseenter(function()
+		{
+			$('#list1').slideDown();
+		})
+
+		$('#sec2').mouseenter(function()
+		{
+			$('#list2').slideDown();
+		})
+
+		$('#sec1').mouseleave(function()
+		{
+			$('#list1').slideUp();
+		})
+
+		$('#sec2').mouseleave(function()
+		{
+			$('#list2').slideUp();
+		})
+	})
+ </script>
+  
+
+ </head>
+
+ <body>
+	<b id='sec1'> PHP=MySql</b><br />
+	<ul id='list1'>
+		<li>Pre-requisites :: HTML, CSS, JS</li>
+		<li>Install XAAMP Server</li>
+	</ul><br />
+
+	<b id='sec2'> HTML-5, CSS-3, jQuery</b><br />
+		<ul id='list2'>
+		<li>Pre-requisites :: HTML, CSS, JS</li>
+		<li>Install Google Chrome and Edit Plus3, 0+</li>
+	</ul><br />
+ </body>
+</html>

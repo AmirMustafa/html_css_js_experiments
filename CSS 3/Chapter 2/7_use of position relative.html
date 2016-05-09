@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<style type="text/css">	
+		div
+		{
+			padding: 50px;
+			width: 50px;
+			height: 50px;
+			background: red;
+			position: relative;  /*by default position is static, therefore for a moving object we use positio-relative */
+			-webkit-animation: myfirst 5s;
+		}
+
+		@-webkit-keyframes myfirst
+		{
+			0% {background: red; left:0px; top:0px;}
+			25% {background: yellow; left:200px; top:0px;}
+			50% {background: blue; left:200px; top:200px;}
+			75% {background: green; left:0px; top:200px;}
+			100% {background: red; left:0px; top:0px;}
+		}
+	</style>
+  
+ </head>
+
+ <body>
+	<div> Aamir </div>
+  
+ </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script src="jquery.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			var count = -1;
+			$("#btn1").click(function()
+			{
+				var fruits = new Array('Peru','Mango','Watermelon');
+				if(count == fruits.length-1)
+				{
+					count =-1;
+					alert("Sorry it is full");
+				}
+				else
+				{
+					count += 1;
+					$('#list1').append("<li>" + fruits[count] + "</li>");
+					
+				}
+			})
+
+			$("#btn2").click(function()
+			{
+				var fruits = new Array('Peru','Mango','Watermelon');
+				if(count == fruits.length-1)
+				{
+					count =-1;
+					alert("Sorry it is full");
+				}
+				else
+				{
+					count += 1;
+					$('#list1').prepend("<li>" + fruits[count] + "</li>");
+					
+				}
+			})
+
+			$("#btn3").click(function()
+			{
+				$("#list1").empty();
+			})
+		});
+	</script>
+ </head>
+
+ <body>
+	<b style="color: blue">Add your favourite Fruits</b><br />
+	<ul id="list1">
+		<li>Apple</li>
+		<li>Banana</li>
+		<li>Pineapple</li>
+	</ul>
+
+	<button id='btn1'>Append</button>
+	<button id='btn2'>Prepend</button>
+	<button id='btn3'>Empty List</button>
+ </body>
+</html>

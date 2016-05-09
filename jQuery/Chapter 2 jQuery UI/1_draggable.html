@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+
+		<script src="jquery-1.9.1.js"></script>
+		<script src="jquery-ui.js"></script>
+
+		<script>
+			$(document).ready(function()
+			{
+				$("#draggable").draggable();
+			});
+		</script>
+		<style>
+			#draggable
+			{
+				width: 150px;
+				height: 150px;
+				padding: 0.5em;
+				border:2px solid darkblue;
+				background: blue;
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+			}
+		</style>
+ </head>
+
+ <body>
+	<div id="draggable">
+
+		<p>Drag me around</p>
+	</div>
+ </body>
+</html>

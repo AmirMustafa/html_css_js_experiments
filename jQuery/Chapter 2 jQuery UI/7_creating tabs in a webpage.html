@@ -1,0 +1,101 @@
+<html>
+<div class='c1'>
+`	<section id='sec1'>Chapter1</section>
+	<section id='sec2'>Chapter2</section>
+	<section id='sec3'>Chapter3</section>
+</div>
+
+<div class='container'>
+	<b style="color:red; font-size:20px;">Introduction to jQuery</b><br />
+</div>
+
+<style>
+	.c1
+	{
+		background: grey;
+		height: 41px;
+	}
+
+	#sec1, #sec2, #sec3
+	{
+		margin-left: 10px;
+		margin-top: 10px;
+		padding-top: 5px;
+		float: left;
+		height: 25px;
+		width: 100px;
+		background: darkgrey;
+		text-align: center;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	.sec1
+	{
+		margin-left: 10px;
+		margin-top: 10px;
+		padding-top: 5px;
+		float: left;
+		height: 25px;
+		width: 100px;
+		background: white;
+		text-align: center;
+		border-top: 1px solid yellow;
+		border-left: 1px solid yellow;
+		border-right: 1px solid yellow;
+		color: blue;
+		font-weight: bold;
+		border-radius: 10px 10px 0px 0px;
+
+
+	}
+
+	.style1
+	{
+		border-top: 1px solid yellow;
+		border-left: 1px solid yellow;
+		border-right: 1px solid yellow;
+		color: blue;
+		font-weight: bold;
+	}
+
+	.container
+	{
+		height :400px;
+		border-bottom: 5px solid yellow;
+		border-left: 5px solid yellow;
+		border-right: 5px solid yellow;
+		padding: 20px;
+
+	}
+
+</style>
+
+<script src="jquery.js"></script>
+<script>
+	$(document).ready(function()
+	{
+$('#sec1').css({'background':'white'}).addClass('sec1');
+	$('section').mouseenter(function()
+		{
+			var id = $(this).attr('id');
+			if((id=='sec2') || (id=='sec3'))
+			{
+$(this).css({'background':'white'}).addClass('style1');	
+$('#sec1').css({'background':'darkgrey'}).removeClass('sec1');
+			}
+		})
+
+		$('section').mouseleave(function()
+		{
+			var id = $(this).attr('id');
+			if((id=='sec2') || (id=='sec3'))
+			{
+$(this).css({'background':'darkgrey'}).removeClass('style1');	
+$('#sec1').css({'background':'white'}).addClass('sec1');
+			}
+		
+		})
+	})
+</script>
+
+</html>

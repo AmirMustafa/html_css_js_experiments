@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script>
+		function fun1()
+		{
+		document.getElementById('div1').innerHTML = '';
+		var arr = new Array('../images/Sunset.jpg','../images/Winter.jpg');
+			for(var i=0;i<arr.length;i++)
+			{
+				var img = document.createElement('img');
+					img.setAttribute('src',arr[i]);
+					img.setAttribute('height',100);
+					img.setAttribute('width',100);
+			document.getElementById('div1').appendChild(img); /*for treating it as in child node, we use .appendClass.*/
+			}
+		}
+
+	</script>
+ </head>
+
+ <body>
+  <input type='button' value='Show Images' onclick="fun1()">
+  <div id="div1"> 
+  </div> 
+ </body>
+</html>

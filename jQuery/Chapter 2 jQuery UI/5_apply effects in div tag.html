@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <style>
+	div
+	{
+		width:200px; height:100px; border:2px solid grey; display:none; border-radius:5px; padding:10px; text-align:justify; margin-top:20px;
+	}
+  </style>
+
+  <script src="jquery-1.9.1.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+		$(document).ready(function()
+		{
+			$('#btn1').click(function()
+			{
+	$('div').show('puff',1000);			
+			})
+
+			$('#btn2').click(function()
+			{
+	$('div').hide('shake',1000);			
+			})
+
+			$('#btn3').click(function()
+			{
+	$('div').toggle('bounce',1000); /* bounce, clip, explode, drop, fold, highlight, puff, scale, shake, slide - these are the different effects*/			
+			})
+		})
+  </script>
+ </head>
+
+ <body>
+	<button id="btn1">Show</button>
+	<button id="btn2">Hide</button>
+	<button id="btn3">Toggle</button>
+
+	<div>
+		PHP is the server sided scripting language.PHP is the server sided scripting language.PHP is the server sided scripting language.
+	</div>
+ </body>
+</html>

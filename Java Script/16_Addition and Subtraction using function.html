@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script>
+		function add(num1,num2)
+		{
+			var res = num1 + num2;
+			alert("Addition is :" + res);
+		}
+
+		function sub(num1,num2)
+		{
+			var res = num1 - num2;
+			alert("Subtraction is :" + res);
+		}
+	</script>
+  
+ </head>
+
+ <body>
+	<form>
+		<script>
+			var i = parseInt(prompt("Enter number 1 :"));
+			var j = parseInt(prompt("Enter number 2 :"));
+			document.write("<input type='button' onclick='add(i,j)' value='Addition' />");
+			document.write("<input type='button' onclick='sub(i,j)' value='Subtraction' />");
+		</script>
+	</form>
+ </body>
+</html>

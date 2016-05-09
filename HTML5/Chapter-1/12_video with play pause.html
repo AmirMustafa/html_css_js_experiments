@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> New Document </title>
+		<script>
+			
+
+			function playPause()
+			{
+				var myVideo=document.getElementById('video1');
+				if(myVideo.paused)
+					myVideo.play();
+				else
+					myVideo.pause();
+			}
+			function makeBig()
+			{
+				var myVideo=document.getElementById('video1');
+				myVideo.width=700;
+			}
+
+			function makeSmall()
+			{
+				var myVideo=document.getElementById('video1');
+				myVideo.width=200;
+			}
+
+			function makeNormal()
+			{
+				var myVideo=document.getElementById('video1');
+				myVideo.width=420;
+			}
+			
+		</script>
+ </head>
+
+ <body align="center">
+<input  type="button" value="Play/Pause" onclick="playPause()" />
+<input  type="button" value="Big" onclick="makeBig()" />
+<input  type="button" value="Small" onclick="makeSmall()" />
+<input  type="button" value="Normal" onclick="makeNormal()" /><br /><br />
+  <video  id="video1" width="420" height="250" autoplay="autoplay" controls="controls"  loop="loop">
+		<source src="video1.mp4" type="video/mp4" />
+	</video>
+	
+ </body>
+</html>

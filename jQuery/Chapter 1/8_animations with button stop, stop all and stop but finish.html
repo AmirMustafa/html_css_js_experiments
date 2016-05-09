@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <script src="jquery.js"></script>
+  <script>
+	$(document).ready(function()
+	{
+		$('#start').click(function()
+		{
+			$('div').animate({left: '200px'},2000);
+			$('div').animate({fontSize: '40px'},2000);
+		})
+
+		$('#stop1').click(function()
+		{
+			$('div').stop();
+			
+		})
+
+		$('#stop2').click(function()
+		{
+			$('div').stop(true);
+			
+		})
+
+		$('#stop3').click(function()
+		{
+			$('div').stop(true,true);
+			
+		})
+	})
+  </script>
+ </head>
+
+ <body>
+	<button id="start">Start</button>
+	<button id="stop1">Stop</button>
+	<button id="stop2">Stop all</button>
+	<button id="stop3">Stop But Finish</button>
+
+	<div style="background:aqua; height:100px; width:200px; position: absolute">HELLO</div>
+ </body>
+</html>

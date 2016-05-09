@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<script src="jquery.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('#p1').mouseenter(function()
+			{
+				/* $('ul:visible').hide(); */
+				$('#list1').show();
+			})
+
+			$('#p2').mouseenter(function()
+			{
+				 $('ul:visible').hide(); 
+				$('#list2').show();
+			})
+
+			$('#p3').mouseenter(function()
+			{
+				 $('ul:visible').hide(); 
+				$('#list3').show();
+			})
+
+			$('#p4').mouseenter(function()
+			{
+				 $('ul:visible').hide(); 
+				$('#list4').show();
+			})
+
+			$('#p5').mouseenter(function()
+			{
+				 $('ul:visible').hide(); 
+				$('#list5').show();
+			})
+
+			$('h4').mouseenter(function()
+			{
+				$('ul:visible').hide();
+			})
+
+			$('.div3').mouseenter(function()
+			{
+				$('ul:visible').hide();
+			})
+
+			$('#id2').mouseenter(function()
+			{
+				$('#sublist1').show();  /* to show subid*/
+			})
+
+			$('#id1').mouseenter(function()
+			{
+				$('#sublist1').hide();  
+			})
+		})
+		
+	</script>
+
+ <head>
+  <style type="text/css">
+		
+		h4
+		{
+			font-size: 20px;
+			padding: 20px 0px;
+			margin-bottom: 0px
+
+		}
+
+		.menus
+		{
+			height: 28px;
+			background: darkorange;
+		}
+
+		.menus p
+		{
+			float: left;
+			margin: 0px;
+			padding: 5px 15px;
+			font-size: 15px;
+
+		}
+
+		.menus p:hover
+		{
+			color: blue;
+		}
+
+		#list1, #list2, #list3, #list4, #list5
+		{
+			margin-top: 0px;
+			background: darkorange;
+			width: 150px;
+			position: absolute;
+			padding-left: 5px;
+			list-style-type: none;
+			display: none;
+
+		}
+
+		a
+		{
+			text-decoration: none;
+			color: red;
+		}
+
+		a:hover
+		{
+			text-decoration: underline;
+			color: blue;
+		}
+
+		li
+		{
+			padding-top: 5px;
+		}
+
+		#list1
+		{
+			padding-left: 15px;
+		}
+
+		#list2
+		{
+			padding-left: 133px;
+		}
+
+		#list3
+		{
+			padding-left: 233px;
+		}
+
+		#list4
+		{
+			padding-left: 325px;
+		}
+
+		#list5
+		{
+			padding-left: 448px;
+			width: 220px;
+		}
+
+		.div3
+		{
+			height: 500px
+		}
+
+		.hover
+		{
+			color: blue;
+		}
+
+		.hover
+		{
+			color: blue;
+		}
+
+		#sublist1
+		{
+			margin-top: 25px;
+			margin-left: 430px;
+			background: darkorange;
+			width: 150px;
+			position: absolute;
+			padding-left: 5px;
+			list-style-type: none;
+			display: none;
+
+
+		}
+  </style>
+ </head>
+
+ <body>
+		<h4 id='msg'>SEED Infotech Ltd.</h4>
+		<div class="menus">
+			<p id='p1'>ABOUT SEED</p>
+			<p id='p2'>SERVICES</p>
+			<p id='p3'>CLIENTS</p>
+			<p id='p4'>CONTACT US</p>
+			<p id='p5'>CAREERS AT SEED</p>
+		</div>
+
+		<ul id='list1'>
+			<li><a href="page1.html">Career Life Cycle</a></li>
+			<li><a href="page1.html">History</a></li>
+		</ul>
+
+		<ul id='list2'>
+			<li><a href="page1.html">Retails</a></li>
+			<li><a href="page1.html">Enterlirize</a></li>
+			<li><a href="page1.html">Staffing</a></li>
+			<li><a href="page1.html">Certificates</a></li>
+		</ul>
+
+		<ul id='list3'>
+			<li><a href="page1.html">Corporate Clients</a></li>
+			<li><a href="page1.html">Institutional Clients</a></li>
+			<li><a href="page1.html">Retail Clients</a></li>
+			<li><a href="page1.html">Certificates</a></li>
+		</ul>
+
+		<ul id='list4'>
+			<li id="id1"><a href="page1.html">Vacancies</a></li>
+			<li id="id2"><a href="page1.html">Life at SEED</a></li>
+		</ul>
+
+		<ul id='list5'>
+			<li><a href="page1.html">Enquiry Form</a></li>
+			
+		</ul>
+
+		<ul id='sublist1'>
+			<li><a href="page1.html">Cultural Events</a></li>
+			<li><a href="page1.html">Technology Summit</a></li>
+		</ul>
+
+		<div class="div3">
+		</div>
+ </body>
+</html>

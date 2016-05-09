@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <style type="text/css">
+	ul
+	{
+		display: none;
+		background: aqua;
+		color: red;
+		width: 250px;
+	}
+
+	b
+	{
+		background: greenyellow;
+		color: black;
+		font-weight: bold;
+		border: 1px solid purple;
+	}
+ </style>
+ 
+ <script src='jquery.js'></script>
+ <script>
+	$(document).ready(function()
+	{
+		$('#sec1').mouseenter(function()
+		{
+			$('#list1').slideDown();
+		})
+
+		$('#sec2').mouseenter(function()
+		{
+			$('#list2').slideDown();
+		})
+
+		$('#sec1').mouseleave(function()
+		{
+			$('#list1').slideUp();
+		})
+
+		$('#sec2').mouseleave(function()
+		{
+			$('#list2').slideUp();
+		})
+	})
+ </script>
+  
+
+ </head>
+
+ <body>
+	<b id='sec1'> Home</b>
+	<ul id='list1'>
+		<li>Electronics</li>
+		<li>Computers</li>
+	</ul>&nbsp;&nbsp;&nbsp;
+
+	<b id='sec2'> About Us</b><br />
+		<ul id='list2'>
+		<li>&copy;Flipkart</li>
+		<li>Contact us @ http://www.facebook.com/flipkart.in</li>
+	</ul><br />
+ </body>
+</html>

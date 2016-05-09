@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	
+ </head>
+
+ <body>
+	<i id="msg"> First Name will be displayed here when you will click below button </i> <br /> <br /> 
+
+	<a href="2_use of session storage(page2).html">Another Page</a> <br /> <br />
+
+		<script type="text/javascript">
+			if(window.sessionStorage)
+			{
+				sessionStorage.setItem('fname','Aamir');
+				document.getElementById('msg').innerHTML = "Hello"+     sessionStorage.getItem('fname');
+			}
+
+			else
+			{
+				document.getElementById('msg').innerHTML = "Your browser dosen't support these, kindly update your browser."
+			}
+		</script>
+	
+ </body>
+</html>

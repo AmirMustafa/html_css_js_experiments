@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+	<script src="jquery-1.9.1.js"></script>
+	<script src="jquery-ui.js"></script>
+		
+	<script>
+		$(document).ready(function()
+		{
+			$('li').draggable(
+			{
+				helper:"clone"
+			})
+
+			$('#droppable').droppable(
+			{
+				disable: false,
+				accept: "li",
+				drop: function(event,ui)
+				{
+	$(this).find("#placeholder").remove();
+	$("<li></li>").text(ui.draggable.text()).appendTo(this).addClass('style1')
+				}
+			
+			})
+		})
+	</script>
+
+	<style>
+		.mainItemList
+		{
+			float: left;
+			margin-left: 10px;
+		}
+
+		.custItemList
+		{
+			width: 300px;
+			float:left;
+			margin-left: 200px;
+			margin-top: 10px;
+			border: 2px solid purple;
+		}
+
+		#msg1
+		{
+			text-align: left;
+			color: red;
+			font-weight: bold;
+			background: lightgray;
+			padding: 10px;
+			font-family: calibri;
+			font-size: 20px;
+			border-bottom: 2px solid gray;
+		}
+
+		#droppable
+		{
+			background: white;
+			padding-left: 20px;
+		}
+
+		.style1
+		{
+			list-style-type: none;
+			width: 150px;
+			margin: 5px;
+			color: blue;
+			background: lightgray;
+		}
+	</style>
+ </head>
+
+ <body>
+	<div class='mainItemList'>
+		<p style='color:red; margin-left:20px;'><b>List of Products</b></p>
+		<ul id='draggable'>
+			<li>T-Shirt</li>
+			<li>Laptop</li>
+			<li>Fasttrack Watch</li>
+			<li>Bag</li>
+			<li>Power Bank</li>
+			<li>Jacket</li>
+			<li>Wallet</li>
+			<li>Shoes</li>
+		</ul>
+	</div>
+
+	<div class="custItemList">
+		<section id='msg1'>Shopping Cart</section>
+		<section id='droppable'>
+			<ol>
+				<li id='placeholder'>Drag you Items Here
+			</ol>
+		</section><br /><br /><br /><br /><br />
+	</div>
+ </body>
+</html>
